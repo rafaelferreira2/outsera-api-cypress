@@ -2,7 +2,7 @@ const data = require('../../fixtures/users.json')
 
 describe('GET /usuarios', () => {
   it('get all users', () => {
-    const user = data.adminUser
+    const user = data.admin_user
     cy.recreateUser(user)
 
     cy.getUserByQuery()
@@ -14,7 +14,7 @@ describe('GET /usuarios', () => {
   })
 
   it('get user by id', () => {
-    const user = data.adminUser
+    const user = data.admin_user
 
     cy.recreateUser(user)
       .then(userCreated => {
@@ -33,7 +33,7 @@ describe('GET /usuarios', () => {
   })
 
   it('get users by name', () => {
-    const user = data.adminUser
+    const user = data.admin_user
     cy.recreateUser(user)
 
     cy.getUserByQuery('nome', user.nome)
@@ -45,7 +45,7 @@ describe('GET /usuarios', () => {
   })
 
   it('get users by email', () => {
-    const user = data.adminUser
+    const user = data.admin_user
     cy.recreateUser(user)
       .then(userCreated => {
         cy.getUserByQuery('email', user.email)
@@ -62,7 +62,7 @@ describe('GET /usuarios', () => {
   })
 
   it('get users by password', () => {
-    const user = data.adminUser
+    const user = data.admin_user
 
     cy.recreateUser(user)
 
@@ -75,7 +75,7 @@ describe('GET /usuarios', () => {
   })
 
   it('get users by admin', () => {
-    const user = data.adminUser
+    const user = data.admin_user
 
     cy.recreateUser(user)
 
@@ -88,7 +88,7 @@ describe('GET /usuarios', () => {
   })
 
   it('get users by not admin', () => {
-    const user = data.normalUser
+    const user = data.normal_user
 
     cy.recreateUser(user)
 
@@ -135,7 +135,7 @@ describe('GET /usuarios', () => {
 
 describe('GET /usuarios/:id', () => {
   it('get user by id', () => {
-    const user = data.adminUser
+    const user = data.admin_user
 
     cy.recreateUser(user)
       .then(postResponse => {
@@ -152,7 +152,7 @@ describe('GET /usuarios/:id', () => {
   })
 
   it('user not found', () => {
-    const user = data.adminUser
+    const user = data.admin_user
 
     cy.recreateUser(user)
       .then(postResponse => {

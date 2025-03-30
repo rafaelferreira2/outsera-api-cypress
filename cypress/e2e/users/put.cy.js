@@ -33,7 +33,7 @@ describe('PUT /usuarios', () => {
   context('empty fields', () => {
     it('empty name', () => {
       const user = data.update_user
-      const newUser = data.emptyName
+      const newUser = data.empty_name
 
       cy.recreateUser(user)
         .then(createdUser => {
@@ -47,7 +47,7 @@ describe('PUT /usuarios', () => {
 
     it('empty email', () => {
       const user = data.update_user
-      const newUser = data.emptyEmail
+      const newUser = data.empty_email
 
       cy.recreateUser(user)
         .then(createdUser => {
@@ -61,7 +61,7 @@ describe('PUT /usuarios', () => {
 
     it('empty password', () => {
       const user = data.update_user
-      const newUser = data.emptyPassword
+      const newUser = data.empty_password
 
       cy.recreateUser(user)
         .then(createdUser => {
@@ -75,7 +75,7 @@ describe('PUT /usuarios', () => {
 
     it('empty admin', () => {
       const user = data.update_user
-      const newUser = data.emptyAdmin
+      const newUser = data.empty_admin
 
       cy.recreateUser(user)
         .then(createdUser => {
@@ -104,7 +104,7 @@ describe('PUT /usuarios', () => {
 
   context('required fields', () => {
     it('required name', () => {
-      const user = data.emptyName
+      const user = data.empty_name
       delete user.nome
 
       cy.recreateUser(user)
@@ -118,7 +118,7 @@ describe('PUT /usuarios', () => {
     })
 
     it('required email', () => {
-      const user = data.emptyEmail
+      const user = data.empty_email
       delete user.email
 
       cy.recreateUser(user)
@@ -132,7 +132,7 @@ describe('PUT /usuarios', () => {
     })
 
     it('required password', () => {
-      const user = data.emptyPassword
+      const user = data.empty_password
       delete user.password
 
       cy.recreateUser(user)
@@ -146,7 +146,7 @@ describe('PUT /usuarios', () => {
     })
 
     it('required admin', () => {
-      const user = data.emptyAdmin
+      const user = data.empty_admin
       delete user.administrador
 
       cy.recreateUser(user)

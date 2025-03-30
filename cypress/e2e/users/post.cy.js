@@ -3,7 +3,7 @@ const data = require('../../fixtures/users.json')
 describe('POST /usuarios', () => {
 
   it('register a admin new user', () => {
-    const user = data.adminUser
+    const user = data.admin_user
 
     cy.deleteUserByEmail(user.email)
     cy.postUser(user)
@@ -15,7 +15,7 @@ describe('POST /usuarios', () => {
   })
 
   it('register a normal user', () => {
-    const user = data.normalUser
+    const user = data.normal_user
 
     cy.deleteUserByEmail(user.email)
     cy.postUser(user)
@@ -41,7 +41,7 @@ describe('POST /usuarios', () => {
 
   context('empty fields', () => {
     it('empty name', () => {
-      const user = data.emptyName
+      const user = data.empty_name
 
       cy.postUser(user)
         .then(response => {
@@ -51,7 +51,7 @@ describe('POST /usuarios', () => {
     })
 
     it('empty email', () => {
-      const user = data.emptyEmail
+      const user = data.empty_email
 
       cy.postUser(user)
         .then(response => {
@@ -61,7 +61,7 @@ describe('POST /usuarios', () => {
     })
 
     it('empty password', () => {
-      const user = data.emptyPassword
+      const user = data.empty_password
 
       cy.postUser(user)
         .then(response => {
@@ -71,7 +71,7 @@ describe('POST /usuarios', () => {
     })
 
     it('empty admin', () => {
-      const user = data.emptyAdmin
+      const user = data.empty_admin
 
       cy.postUser(user)
         .then(response => {
@@ -107,7 +107,7 @@ describe('POST /usuarios', () => {
     })
 
     it('required email', () => {
-      const user = data.emptyEmail
+      const user = data.empty_email
       delete user.email
 
       cy.postUser(user)
@@ -118,7 +118,7 @@ describe('POST /usuarios', () => {
     })
 
     it('required password', () => {
-      const user = data.emptyPassword
+      const user = data.empty_password
       delete user.password
 
       cy.postUser(user)
@@ -129,7 +129,7 @@ describe('POST /usuarios', () => {
     })
 
     it('required admin', () => {
-      const user = data.emptyAdmin
+      const user = data.empty_admin
       delete user.administrador
 
       cy.postUser(user)

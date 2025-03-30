@@ -5,13 +5,13 @@
     "password": "test123",
     "administrador": "true"
   },
-  "adminUser": {
+  "admin_user": {
     "nome": "Admin User",
     "email": "admin_user@yahoo.com",
     "password": "test456",
     "administrador": "true"
   },
-  "normalUser": {
+  "normal_user": {
     "nome": "Normal User",
     "email": "normal_user@hotmail.com",
     "password": "test789",
@@ -23,25 +23,25 @@
     "password": "test123",
     "administrador": "false"
   },
-  "emptyName": {
+  "empty_name": {
     "nome": "",
     "email": "empty_name@hotmail.com",
     "password": "teste123",
     "administrador": "true"
   },
-  "emptyEmail": {
+  "empty_email": {
     "nome": "Empty Email",
     "email": "",
     "password": "teste123",
     "administrador": "true"
   },
-  "emptyPassword": {
+  "empty_password": {
     "nome": "Empty Password",
     "email": "primeiro11@hotmail.com",
     "password": "",
     "administrador": "true"
   },
-  "emptyAdmin": {
+  "empty_admin": {
     "nome": "Empty Password",
     "email": "primeiro11@hotmail.com",
     "password": "123123",
@@ -52,24 +52,6 @@
     "email": "",
     "password": "",
     "administrador": ""
-  },
-  "inexistentEmail": {
-    "nome": "Inexistent Email",
-    "email": "inexistent_email@hotmail.com",
-    "password": "teste123",
-    "administrador": "true"
-  },
-  "wrongPassword": {
-    "nome": "Wrong Password",
-    "email": "wrong_password@hotmail.com",
-    "password": "wrong_pass",
-    "administrador": "true"
-  },
-  "adminToken": {
-    "nome": "Fulano da Silva",
-    "email": "master_user@qa.com",
-    "password": "teste",
-    "administrador": "true"
   },
   "delete_user": {
     "nome": "Delete User",
