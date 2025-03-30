@@ -1,0 +1,92 @@
+{
+  "create_user": {
+    "nome": "Create User",
+    "email": "create_user@hotmail.com",
+    "password": "test123",
+    "administrador": "true"
+  },
+  "adminUser": {
+    "nome": "Admin User",
+    "email": "admin_user@yahoo.com",
+    "password": "test456",
+    "administrador": "true"
+  },
+  "normalUser": {
+    "nome": "Normal User",
+    "email": "normal_user@hotmail.com",
+    "password": "test789",
+    "administrador": "false"
+  },
+  "duplicate": {
+    "nome": "Duplicate User",
+    "email": "duplicate_user@hotmail.com",
+    "password": "test123",
+    "administrador": "false"
+  },
+  "emptyName": {
+    "nome": "",
+    "email": "empty_name@hotmail.com",
+    "password": "teste123",
+    "administrador": "true"
+  },
+  "emptyEmail": {
+    "nome": "Empty Email",
+    "email": "",
+    "password": "teste123",
+    "administrador": "true"
+  },
+  "emptyPassword": {
+    "nome": "Empty Password",
+    "email": "primeiro11@hotmail.com",
+    "password": "",
+    "administrador": "true"
+  },
+  "emptyAdmin": {
+    "nome": "Empty Password",
+    "email": "primeiro11@hotmail.com",
+    "password": "123123",
+    "administrador": ""
+  },
+  "empty_all": {
+    "nome": "",
+    "email": "",
+    "password": "",
+    "administrador": ""
+  },
+  "inexistentEmail": {
+    "nome": "Inexistent Email",
+    "email": "inexistent_email@hotmail.com",
+    "password": "teste123",
+    "administrador": "true"
+  },
+  "wrongPassword": {
+    "nome": "Wrong Password",
+    "email": "wrong_password@hotmail.com",
+    "password": "wrong_pass",
+    "administrador": "true"
+  },
+  "adminToken": {
+    "nome": "Fulano da Silva",
+    "email": "master_user@qa.com",
+    "password": "teste",
+    "administrador": "true"
+  },
+  "delete_user": {
+    "nome": "Delete User",
+    "email": "delete_user@hotmail.com",
+    "password": "test123",
+    "administrador": "true"
+  },
+  "update_user": {
+    "nome": "Update User",
+    "email": "update_user@hotmail.com",
+    "password": "test123",
+    "administrador": "true"
+  },
+  "new_user": {
+    "nome": "New User",
+    "email": "new_user@hotmail.com",
+    "password": "test456",
+    "administrador": "false"
+  }
+}
